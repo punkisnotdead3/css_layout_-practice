@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*块级元素特性：
+        1 不写宽度 就和父容器宽度相同
+        2 独占一行
+        3 支持所有样式
+        4 所占区域是一个矩形
+        */
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background: pink;
+
+        }
+
+        .box2 {
+            width: 50px;
+            height: 50px;
+            background: blue;
+
+        }
+        /*
+
+        千万不要使用内联盒子 来做布局
+        这种盒子 作下文本修饰就可以了
+
+
+        内联不会换行
+        有些样式不支持 比如 widht height
+
+        不写宽度的时候 由内容决定
+
+        所占的区域不一定是矩形
+
+        比如自动换行的时候 就不是矩形了
+
+        内联 盒子之间会由空隙
+
+        */
+        .inline1 {
+            background: blue;
+        }
+
+        .inline2 {
+            background: red ;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<span class="inline1">内联盒子1</span>
+<span class="inline2">内联盒子1</span>
+</body>
+</html>

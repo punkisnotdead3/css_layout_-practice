@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background: pink;
+
+        }
+
+        .box2 {
+            width: 50px;
+            height: 50px;
+            background: blue;
+            /*margin-top传递 可以看出来 这个top会导致box1 也top了*/
+            margin-top: 20px;
+            /*但是marginleft 就不会 这里属性不正交 真的坑呀*/
+            margin-left: 20px;
+            /* 替代方案 有很多 比如设置透明的border之类的*/
+
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="box2">
+
+    </div>
+</div>
+
+</body>
+</html>
